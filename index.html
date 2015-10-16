@@ -7,15 +7,11 @@
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- load angular via CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
-    <script src="js/script.js"></script>
 </head>
 <!-- define angular controller -->
 
 <body ng-controller="mainController">
-    <div class="container">
+    <div class="container fade-slow">
         <header>
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1  header-text">
@@ -30,17 +26,25 @@
                 <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1   header-image-holder">
                 </div>
                 <ul class="nav nav-pills nav-justified">
-                    <li role="presentation"><a href="#">Wedding</a></li>
-                    <li role="presentation"><a href="#/ashdan">Ash and Dan</a></li>
-                    <li role="presentation"><a href="#/families">Families</a></li>
-                    <li role="presentation"><a href="#/location">Location</a></li>
-                    <li role="presentation"><a href="#/sleep">Sleep</a></li>
-                    <li role="presentation"><a href="#/schedule">Schedule</a></li>
-                    <li role="presentation"><a href="#/packing">Packing</a></li>
-                    <li role="presentation"><a href="#/rsvp">RSVP</a></li>
-                    <li role="presentation"><a href="#/gifts">Gifts</a></li>
+                    <li class="nav-link wedding-link"><a href="#">Wedding</a></li>
+                    <li class="nav-link ashdan-link"><a href="#/ashdan">Ash and Dan</a></li>
+                    <li class="nav-link families-link"><a href="#/families">Families</a></li>
+                    <li class="nav-link location-link"><a href="#/location">Location</a></li>
+                    <li class="nav-link sleep-link"><a href="#/sleep">Sleep</a></li>
+                    <li class="nav-link schedule-link"><a href="#/schedule">Schedule</a></li>
+                    <li class="nav-link packing-link"><a href="#/packing">Packing</a></li>
+                    <li class="nav-link rsvp-link"><a href="#/rsvp">RSVP</a></li>
+                    <li class="nav-link gifts-link"><a href="#/gifts">Gifts</a></li>
                 </ul>
                 <div ng-view class="margin-top"></div>
             </div>
         </div>
     </div>
+
+        <!-- load angular via CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+  </html>
