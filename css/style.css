@@ -183,6 +183,43 @@ ul li {
     }
 }
 
+@media(max-width:992px) {
+	.header-words {
+	    font-size: 112px;
+	}
+	.header-words-and {
+	    font-size: 170px;
+	    margin-top: -13px;
+	}
+	.nav>li>a {
+    	font-size: 60%;
+    	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    	text-shadow: none;
+    	padding: 5px 0;
+    }
+}
+
+@media(max-width:768px) {
+	.nav-justified>li {
+		float: left;
+		margin: 5px 20px;
+	}
+	.as-inner-text {
+	    background-color: white;
+	    margin-top: 0px;
+	}
+}
+
+@media(max-width:670px) {
+	.header-words {
+	    font-size: 95px;
+	}
+	.header-words-and {
+	    font-size: 170px;
+	    margin-top: -26px;
+	}
+}
+
 
 /* ANIMATIONS
 ============================================================================= */
